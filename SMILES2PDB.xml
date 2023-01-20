@@ -1,0 +1,37 @@
+<WaNoTemplate>
+    
+	<WaNoMeta>
+ 		<Author>
+		<Name> Montserrat Penaloza-Amion</Name>
+  		<Email> montserrat.amion@kit.edu</Email>
+ 		</Author>
+		<Description>
+			This WaNo creates PDB and xyz coordinates from SMILE code with good format for further simulations.
+ 		</Description>
+ 		<Keyword>SIMONA</Keyword>
+	</WaNoMeta>
+
+<WaNoRoot name="SMILES2PDB">
+    <WaNoString name="SMILES-CODE">NONE</WaNoString>
+    
+ 
+    </WaNoRoot>
+    
+    <WaNoExecCommand>
+
+    <!-- Here add Anconda env, gromacs to excute WaNo -->
+        python SMILES2PDB.py
+    </WaNoExecCommand>
+        
+    <WaNoInputFiles>
+    <WaNoInputFile logical_filename="SMILES2PDB.py">SMILES2PDB.py</WaNoInputFile>
+    </WaNoInputFiles>
+    
+
+<WaNoOutputFiles>
+        <WaNoOutputFile>StructureOutput.pdb</WaNoOutputFile>
+        <WaNoOutputFile>StructureOutput.xyz</WaNoOutputFile>
+</WaNoOutputFiles>
+
+
+ </WaNoTemplate>
