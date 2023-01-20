@@ -2,7 +2,7 @@ When publishing results obtained with SMILES2PDB WaNo, please consider to cite
 
 # SMILES2PDB
 
-<img src="SIMONA-DHscan.png"  width="10%">
+<img src="SMILES2PDB.png"  width="10%">
 
 This WaNo:
 
